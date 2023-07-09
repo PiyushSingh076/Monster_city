@@ -10,7 +10,7 @@
     tools:context=".MainActivity3">
 
     <LinearLayout
-        android:layout_weight="1.8"
+        android:layout_weight="1.9"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -21,76 +21,31 @@
             android:fontFamily="@font/creepster"
             android:text="--Rules--"
             android:gravity="center_horizontal"
-            android:textSize="60dp"
+            android:textSize="40dp"
             android:textColor="#FFD740"/>
     </LinearLayout>
 
 
 
     <LinearLayout
-        android:layout_weight="1.9"
+        android:layout_weight="1.6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ogre"
-            android:layout_marginLeft="70dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        </ImageView>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="-OGRE"
-            android:fontFamily="@font/finger_paint"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:gravity="center_horizontal"
-            android:layout_marginLeft="10dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/monster3"
-            android:layout_marginLeft="30dp">
-
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="-CHTULLU"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/finger_paint"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:layout_marginLeft="10dp"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/house"
-            android:layout_marginLeft="30dp">
-
-        </ImageView>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="-HOME"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/finger_paint"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:layout_marginLeft="10dp"/>
+        </androidx.recyclerview.widget.RecyclerView>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_marginLeft="15dp"
-        android:layout_weight="1"
+        android:layout_weight="1.2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -103,13 +58,7 @@
             android:textSize="17dp"
             android:textColor="#FFD740"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/finger_paint"
-            android:text="* Collect the coins to increase your score"
-            android:textSize="17dp"
-            android:textColor="#FFD740"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
